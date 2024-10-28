@@ -8,6 +8,55 @@
 </head>
 <body>
 
+    <nav id="vuelos-nav">
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Vuelos</a></li>
+        <li><a href="#">Actividades</a></li>
+        <li><a href="#">Hoteles</a></li>
+        <li><a href="#">Destinos</a></li>
+    </nav>
+
+    <section>
+        <img src="/imagenes/DALL·E 2024-10-28 12.52.07 - A high-resolution image of a modern airplane parked at an airport, captured during daytime. The airplane is seen from the side with the airport termin.webp" alt="Avion estacionado" id="img-avion">
+    </section>
+
+    <section id="form-section">
+        <form id="search-form">
+            <div class="form-group">
+                <label for="from">Aeropuerto de Salida</label>
+                <input type="text" id="from" name="from" placeholder="Ejemplo: CDMX">
+            </div>
+            <div class="form-group">
+                <label for="to">Aeropuerto de Llegada</label>
+                <input type="text" id="to" name="to" placeholder="Ejemplo: JFK">
+            </div>
+            <div class="form-group">
+                <label for="departure-date">Fecha de Salida</label>
+                <input type="date" id="departure-date" name="departure-date">
+            </div>
+            <div class="form-group">
+                <label for="return-date">Fecha de Vuelta</label>
+                <input type="date" id="return-date" name="return-date">
+            </div>
+            <div class="form-group">
+                <label for="adults">Adultos</label>
+                <input type="number" id="adults" name="adults" min="1" value="1">
+            </div>
+            <div class="form-group">
+                <label for="children">Menores de Edad</label>
+                <input type="number" id="children" name="children" min="0" value="0">
+            </div>
+            <div class="form-group">
+                <label for="class">Clase</label>
+                <select id="class" name="class">
+                    <option value="economy">Económica</option>
+                    <option value="business">Ejecutivo</option>
+                    <option value="first">Primera Clase</option>
+                </select>                
+            </div>
+            <button type="submit">Buscar Vuelos</button>
+        </form>
+    </section>
     
 
     <script src="script.js"></script>
