@@ -8,13 +8,15 @@
 </head>
 <body>
 
-    <nav id="vuelos-nav">
+<nav id="vuelos-nav">
+    <ul>
         <li><a href="#">Inicio</a></li>
-        <li><a href="#">Vuelos</a></li>
+        <li><a href="#" class="active">Vuelos</a></li>
         <li><a href="#">Actividades</a></li>
         <li><a href="#">Hoteles</a></li>
         <li><a href="#">Destinos</a></li>
-    </nav>
+    </ul>
+</nav>
 
     <section>
         <img src="/imagenes/DALL·E 2024-10-28 12.52.07 - A high-resolution image of a modern airplane parked at an airport, captured during daytime. The airplane is seen from the side with the airport termin.webp" alt="Avion estacionado" id="img-avion">
@@ -24,19 +26,19 @@
         <form id="search-form">
             <div class="form-group">
                 <label for="from">Aeropuerto de Salida</label>
-                <input type="text" id="from" name="from" placeholder="Ejemplo: CDMX">
+                <input type="text" id="from" name="from" placeholder="Ejemplo: Bogotá" required>
             </div>
             <div class="form-group">
                 <label for="to">Aeropuerto de Llegada</label>
-                <input type="text" id="to" name="to" placeholder="Ejemplo: JFK">
+                <input type="text" id="to" name="to" placeholder="Ejemplo: Cali" required>
             </div>
             <div class="form-group">
                 <label for="departure-date">Fecha de Salida</label>
-                <input type="date" id="departure-date" name="departure-date">
+                <input type="date" id="departure-date" name="departure-date" required>
             </div>
             <div class="form-group">
                 <label for="return-date">Fecha de Vuelta</label>
-                <input type="date" id="return-date" name="return-date">
+                <input type="date" id="return-date" name="return-date" required>
             </div>
             <div class="form-group">
                 <label for="adults">Adultos</label>
@@ -57,7 +59,48 @@
             <button type="submit">Buscar Vuelos</button>
         </form>
     </section>
+
+    <section id="destinos-section">
+        <div class="card">
+            <div class="card-image">
+                <div class="card-text">Carnaval de Cali</div>
+                <div class="card-hover-text">Bogotá >>> Cali</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-image">
+                <div class="card-text">Festival de negros y blancos</div>
+                <div class="card-hover-text">Al que corresponda</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-image">
+                <div class="card-text">Otro</div>
+                <div class="card-hover-text">Bla bla bla</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-image">
+                <div class="card-text">Bla bla bla</div>
+                <div class="card-hover-text">Otro</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-image">
+                <!-- <img src="" alt="Bogotá"> -->
+                <div class="card-text">Bla</div>
+                <div class="card-hover-text">Ble</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-image">
+                <div class="card-text">Bli</div>
+                <div class="card-hover-text">Blo</div>
+            </div>
+        </div>
+    </section>
     
+    <!-- Futuro Footer, este lo copio de alguien mas para que tengamos el mismo -->
 
     <script src="script.js"></script>
 </body>
